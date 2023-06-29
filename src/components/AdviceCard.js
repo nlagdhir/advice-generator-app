@@ -6,6 +6,7 @@ function AdviceCard() {
   const [advice, setAdvice] = useState({});
 
   const findAdvice = () => {
+    //API
     fetch("https://api.adviceslip.com/advice")
       .then((res) => res.json())
       .then((data) => setAdvice(data));
